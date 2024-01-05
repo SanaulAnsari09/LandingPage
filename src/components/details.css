@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.details{
+    padding-top: 50px;
+    width: 50%;
+}
+.details .list{
+    padding-top: 10px;
+}
+.details .list ul li{
+    list-style: none;
+    line-height: 30px;
+    
+}
+.details .list ul li i{
+    padding-right: 10px;
+}
+
+.details p{
+    text-align: justify;
+}
+
+.details .list-item .item{
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.details .list-item .item p{
+    line-height: 23px;
+}
+
+.details .list-item .item i{
+    padding-top: 3px;
+}
+.details .list-item p  span {
+    font-size:16px;
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+@media screen and (max-width : 667px){
+    .details{
+        width: 100%;
+    }
+}

@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.instructor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.instructor .profile{
+    width: 10%;
+}
+.instructor .profile img{
+    width: 100%;
+    height: 85%;
+    border-radius: 50%;
+}
+
+.instructor .first{
+    width: 35%;
+}
+.instructor .first p{
+    text-align: justify;
+}
+.instructor .second{
+    width: 50%;
+}
+.instructor .second p{
+    text-align: justify;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+.icons{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icons div i{
+    font-size: 25px;
+}
+
+@media screen and (max-width : 991px){
+    .instructor .first{
+        width: 30%;
+    }   
+    .instructor .second{
+        width: 45%;
+    }   
+    .instructor .profile{
+        width: 15%;
+    }
+    .instructor .profile img{
+        height: 125px;
+    }
+}
+
+@media screen and (max-width : 774px){
+    .instructor .first{
+        width: 30%;
+    }   
+    .instructor .second{
+        width: 45%;
+    }   
+    .instructor .first p{
+        font-size: 14px;
+    }   
+    .instructor .second p{
+        font-size: 14px;
+    }   
+    .instructor .profile{
+        width: 15%;
+    }
+    .instructor .profile img{
+        height: 105px;
+    }
+    .icons{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 667px){
+    .instructor{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .instructor .first{
+        width: 100%;
+    }   
+    .instructor .second{
+        width: 100%;
+    } 
+    .instructor .first p{
+        font-size: 16px;
+    }   
+    .instructor .second p{
+        font-size: 16px;
+    } 
+    .icons{
+        width: 100%;
+    }
+    .instructor .profile{
+        width: 15%;
+    }
+    .instructor .profile img{
+        width: 100%;
+        height: 85%;
+        border-radius: 50%;
+    }
+    .icons div i{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width : 494px){
+    .social-media{
+        height: 200px;
+    } 
+   
+    .icons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+   }
+   .icons div i{
+        font-size: 30px;
+        width: 40px;
+   }
+   .icons div span{
+        font-size: 20px;
+   }
+}
